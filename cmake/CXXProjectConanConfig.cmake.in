@@ -1,0 +1,8 @@
+get_filename_component(CXXProjectConanCMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+# find_dependency(...)
+
+if(NOT TARGET CXXProjectConan::CXXProjectConan)
+    include("${CXXProjectConan_CMAKE_DIR}/CXXProjectConanTargets.cmake")
+endif()
