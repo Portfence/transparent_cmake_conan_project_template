@@ -19,8 +19,9 @@ set(CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR} ${CMAKE_PREFIX_PATH})
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-find_package(Boost CONFIG REQUIRED)
-find_package(websocketpp CONFIG REQUIRED)
+find_package(doctest CONFIG REQUIRED)
+find_package(trompeloeil CONFIG REQUIRED)
 find_package(Threads MODULE REQUIRED)
 
 add_subdirectory(src)
+add_subdirectory(test)

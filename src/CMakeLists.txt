@@ -15,8 +15,6 @@ target_compile_options(${PROJECT_NAME}
 )
 
 target_link_libraries(${PROJECT_NAME}
-  PRIVATE Boost::Boost
-  PRIVATE websocketpp::websocketpp
   PRIVATE Threads::Threads
 )
 
