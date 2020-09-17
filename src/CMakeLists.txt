@@ -11,7 +11,7 @@ target_compile_options(${PROJECT_NAME}
   PRIVATE -Wextra
   PRIVATE -Wshadow
   PRIVATE -Wnon-virtual-dtor
-  PRIVATE -pedantic
+  PRIVATE -Wpedantic
 )
 
 target_link_libraries(${PROJECT_NAME}
